@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <groups>
+    <run>
+      <exclude name="SmokeTest"/> <!-- Excludes the "SmokeTest" group -->
+    </run>
+  </groups>
+  <test thread-count="5" name="GroupTest"> <!-- Test execution with 5 threads -->
+    <classes>
+      <class name="Day17.Groups_demo"/> <!-- Specifies the test class -->
+      <class name="Day17.Group2NewTest"></class>
+    </classes>
+  </test>
+</suite>
